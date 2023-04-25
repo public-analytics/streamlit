@@ -80,13 +80,8 @@ def chat(query_with_context, model):
     )
     return res
 
-# def run(query, index, k, token_limit, model):
-#     vector = get_embed(query)
-#     pinecone_index = pinecone_init(key, index)
-#     context = get_context(pinecone_index, vector, k)
-#     query_with_context = build_context(context, token_limit)
-#     output = chat(query_with_context, model)
-#     return output
+#################################################################
+###Streamlit###
 
 st.title('Invest Bot')
 st.subheader('Public.com Pinecone POC')
