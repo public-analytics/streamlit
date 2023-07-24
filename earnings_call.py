@@ -82,7 +82,7 @@ st.subheader('Public.com Pinecone POC')
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
-    index = st.selectbox('Pinecone Index', ('earnings-call'))
+    index = st.selectbox('Pinecone Index', ('earnings-call', 'public-faq'))
 with col2:
     k = st.number_input('Pinecone Results', format='%i', value=10)
 with col3:
